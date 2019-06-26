@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.background1 { 
+  background-image: url(/static/imgs/pic008.jpg);
+  background-color: #000000;
+}
+</style>
+<script>
+function run(clickedObj){
+	
+	$(clickedObj).animate({width:'20px',opacity:'0.2',right:'10px',top:'10px'},'150000');
+	
+	
+}
+
+</script>
+<meta charset="UTF-8">
+<title>The Wandering Earth </title>
+<script src="/static/jquery.min.js"></script>
+</head>
+<body class="background1">
+
+<h1 style="color:white">大家好，我准备设计和实现一个“地球流浪”的漂亮网页！ 欢迎大家观赏,谢谢！</h1>
+<div id="poem-t"
+		style="display: none; font-size: 22px; color: orange; position:absolute; left :10px;top:50px" >
+		《诗词版"流浪地球"》<br /> <span style="font-size: 18px; color: grey">
+			-郭鹏 </span><br /> <br /> 西风吹皱东方河，万年地球白发多。 <br /> 流浪星际家何去，满船清梦出银河。
+	</div>
+<img src="/static/imgs/earth.png" style="position:fixed;left:10px;bottom:10px;width:200px" onclick="run(this);return false"/>
+</body>
+</html>
